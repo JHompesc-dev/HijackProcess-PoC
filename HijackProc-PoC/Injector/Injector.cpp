@@ -27,7 +27,7 @@ int main(int argc, char* args[])
 {
 
 	
-	pname = (PCHAR)"putty.exe";  //test on putty.exe, we will load our malicious .dll into putty and gain access to a different process's memory from there
+	pname = (PCHAR)"spotify.exe";  //test on spotify.exe, we will load our malicious .dll into putty and gain access to a different process's memory from there
 	
 
 	cout << "Injecting" << endl;
