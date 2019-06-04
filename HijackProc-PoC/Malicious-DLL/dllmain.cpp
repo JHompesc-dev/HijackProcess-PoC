@@ -12,7 +12,7 @@ BOOL APIENTRY DllMain(HMODULE hMOD, DWORD  ul_reason_for_call, LPVOID lpReserved
 		
 		UnlinkModuleFromPEB(hMOD); //Unlink the module from the Process Environment Header. We could archieve the same goal by using a manual map injector.
 
-		//Let's allocate a console for debugging purpose
+		//Let's allocate a console for debugging purposes. 
 		AllocConsole(); 
 		freopen("conin$", "r+t", stdin);
 		freopen("conout$", "w+t", stdout);
