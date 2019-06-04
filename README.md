@@ -11,6 +11,6 @@ This software was designed for research purposes only.
 
 The software comes with no warranties of any kind whatsoever, use at own risk!
 
-Using any parts of this code for malicious purposes is strictly forbidden.
+* ___You are responsible for your own actions__. If you mess something up or break any laws while using this software, it's your fault, and your fault only.
 
 If these terms are not acceptable, you aren't allowed to use the code.
