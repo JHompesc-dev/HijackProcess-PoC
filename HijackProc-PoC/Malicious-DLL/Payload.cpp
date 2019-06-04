@@ -10,8 +10,7 @@ DWORD WINAPI PayloadMain(LPVOID PARAMS) {
 
 	//find processID via window handle, this can also be done with batfitch's function.
 
-	HWND windowHandle = NULL;
-	int retry = 0;
+	HWND windowHandle = NULL; 
 
 	do {
 		windowHandle = FindWindowA(0, "YourWindowNameHere"); //Target process to gain access too.
@@ -22,7 +21,7 @@ DWORD WINAPI PayloadMain(LPVOID PARAMS) {
 
 
 	GetWindowThreadProcessId(windowHandle, &ProcessID);
-	hProcess = OpenProcess(PROCESS_ALL_ACCESS, 0, ProcessID);
+	hProcess = OpenProcess(PROCESS_ALL_ACCESS, 0, ProcessID); //ALL_ACCESS not recommended.
 
 
 
@@ -46,11 +45,6 @@ DWORD WINAPI PayloadMain(LPVOID PARAMS) {
 	
 	// We can spawn threads from here to keep running
 	//CreateThread(0, 0, &RunPayloadThread, 0, 0, 0);
-
-
-
-	
-
 
 	return TRUE;
 
